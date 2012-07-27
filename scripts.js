@@ -38,13 +38,13 @@ var APP = {//PL95DEFDD03D1A44FF
 		                    var videoID = item["media$group"]["yt$videoid"]["$t"];                
 		                    var video = 'http://www.youtube.com/watch?v=' + videoID;
 		                    //alert('#video-list-' + i);
-		                    $('#video-list-' + i).append('<h2> <a href="" id="vid'+cnt+'"> '+ cnt +' - ' + title + '  </a> </h2> <br/> ');
+		                    $('#video-list-' + i).append('<h2> <a href="http://www.youtube.com/watch?v='+videoID+'" id="vid'+cnt+'"> '+ cnt +' - ' + title + '  </a> </h2> <br/> ');
 		                    $('#vid'+cnt).click(function() {
-		                    	 	event.preventDefault();
+		                    	 	/*event.preventDefault();
 		                    		$('#video').empty()
 		                    			.append('<iframe width="640" height="360" src="http://www.youtube.com/embed/'+videoID+'" frameborder="0" allowfullscreen></iframe>')
 		                    			.append('<br><h2>'+$(this).html()+'</h2>');
-		                    	
+		                    	*/
 		                    });
 		                    cnt++;
 		                });
